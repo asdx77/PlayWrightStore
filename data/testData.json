@@ -1,0 +1,23 @@
+{
+
+   "name" : "buyer1",
+   "lastName" : "online",
+   "email" : "buyer1@mail.com",
+   "password" : "buyer1Password*",
+   "day" : "17",
+   "month" : "June",
+   "year" : "2001",
+   "address" : "87 Rose Street",
+   "country" : "Australia",
+   "state" : "Victoria",
+   "city" : "Melbourne",
+   "zipcode" : "3797",
+   "mobileNumber" : "(03) 9609 3975",
+   "cardNumber" : "4001919257537193",
+   "cvc" : "111",
+   "expirationYear" : "2030",
+   "expirationMonth" : "12",
+   "productName" : "Sleeveless Unicorn Patch Gown - Pink",
+   "productId" : "19",
+   "quantity": "30"
+}
