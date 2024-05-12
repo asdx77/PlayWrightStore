@@ -44,7 +44,6 @@ test('Add Product to Cart', async () => {
 
 });
 
-
 test('Register while Checkout', async () => {
 
   const cart = new CartPage(page);  
@@ -83,6 +82,7 @@ test('Place Order and logout', async () => {
   
   const homeScreen = new HomeScreenPage(page);  
   await homeScreen.clickCart(); 
+  
   const cart = new CartPage(page);  
   await cart.clickCheckout();
   await cart.clickPlaceOrder();
@@ -125,10 +125,10 @@ test('Fill Contact Form', async () => {
  
    const contactUs = new ContactUsPage(page);  
    await contactUs.checkContactusTitle();  
-   await contactUs.typeName("John Doe");
-   await contactUs.typeEmail("JohnDoe@email.com");
-   await contactUs.typeSubject("Help");
-   await contactUs.typeMsg("John Doe needs email help");
+   await contactUs.typeName(testData.name);
+   await contactUs.typeEmail(testData.email);
+   await contactUs.typeSubject(testData.productId);
+   await contactUs.typeMsg(testData.productName);
    await contactUs.clickSubmit();  
    await contactUs.clickAlertOk();
  
