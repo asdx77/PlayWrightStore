@@ -43,12 +43,6 @@ export class HomeScreenPage {
     await this.deleteAcctBtn.click();      
   }
 
-  async closeAdds() {
-    if (await this.closeAddBtn.isVisible({ timeout: 3000 })) {
-      await this.closeAddBtn.click();
-    }
-  }
-
   async clickViewProduct(prodId: string) {
     await this.page.keyboard.press('PageDown');
     await this.page.keyboard.press('PageDown');
