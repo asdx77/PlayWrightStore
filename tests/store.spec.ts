@@ -112,7 +112,6 @@ test('Login', async () => {
   const loginReg = new LoginPage(page);  
   await loginReg.typeLogEmail(testData.email);
   await loginReg.typePassword(testData.password);
-  await loginReg.clickLogin();
 });
 
 test('Fill Contact Form', async () => {
