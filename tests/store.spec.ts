@@ -66,7 +66,7 @@ test('Register while Checkout', async () => {
   await createAcc.typeFirstName(testData.name);
   await createAcc.typeLastName(testData.lastName);
   await createAcc.typeAddress(testData.address);
-  await createAcc.selecCountry(testData.country);
+  await createAcc.selectCountry(testData.country);
   await createAcc.typeState(testData.state);
   await createAcc.typeCity(testData.city);
   await createAcc.typeZipCode(testData.zipcode);
@@ -112,6 +112,9 @@ test('Login', async () => {
   const loginReg = new LoginPage(page);  
   await loginReg.typeLogEmail(testData.email);
   await loginReg.typePassword(testData.password);
+  await loginReg.clickLogin();
+
+  await homeScreen.checkLogedAccount();
 });
 
 test('Fill Contact Form', async () => {

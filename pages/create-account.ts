@@ -72,7 +72,7 @@ export class CreateAccountPage {
     await this.addressTxtBox.fill(name);   
   }
 
-  async selecCountry(country: string) {
+  async selectCountry(country: string) {
     await this.countrySelect.selectOption(country);   
   }
 

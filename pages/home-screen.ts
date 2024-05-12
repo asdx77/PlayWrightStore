@@ -57,6 +57,10 @@ export class HomeScreenPage {
   }
 
 
+  async checkLogedAccount() {
+    await expect(this.logoutBtn).toBeVisible();   
+  }
+
 
 
 }
